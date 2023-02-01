@@ -1,0 +1,10 @@
+from nltk.stem import WordNetLemmatizer
+
+s = """
+ You all are so beautiful soooo beautiful
+ Thought that was a really awesome quote
+ Beautiful things don't ask for attention
+ """
+
+wnl = WordNetLemmatizer()
+print " ".join([wnl.lemmatize(i) for i in s.split()]) #You all are so beautiful soooo beautiful Thought that wa a really awesome quote Beautiful thing don't ask for attention
